@@ -49,7 +49,6 @@ namespace ArrayPractice
             this.label1.Size = new System.Drawing.Size(67, 30);
             this.label1.TabIndex = 0;
             this.label1.Text = "(・ω・)";
-//            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // timer1
             // 
@@ -67,6 +66,7 @@ namespace ArrayPractice
             this.scoreLabel.Size = new System.Drawing.Size(62, 21);
             this.scoreLabel.TabIndex = 1;
             this.scoreLabel.Text = "Score 0";
+            this.scoreLabel.Click += new System.EventHandler(this.scoreLabel_Click);
             // 
             // label2
             // 
