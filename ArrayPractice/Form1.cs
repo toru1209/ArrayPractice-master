@@ -69,23 +69,18 @@ namespace ArrayPractice
                     vy[i] = -Math.Abs(vy[i]);
                 }
 
-
-
-
-
                 if ((fpos.X >= labels[i].Left)
                     && (fpos.X < labels[i].Right)
                     && (fpos.Y >= labels[i].Top)
                     && (fpos.Y < labels[i].Bottom))
                 {
-                    label1.Visible = false;
+                    labels[i].Visible = false;
                 }
-            }
-             if (        (label1.Visible == false)
-                 &&      (label2.Visible == false)
-                 &&      (label3.Visible == false))
-            {
 
+                if(i<0)
+                {
+                    timer1.Enabled
+                }
             }
         }
 
