@@ -19,10 +19,8 @@ namespace ArrayPractice
         int score = 100;
         int vx2 = rand.Next(-20, 21);
         int vy2 = rand.Next(-20, 21);
-        int score2 = 100;
         int vx3 = rand.Next(-20, 21);
         int vy3 = rand.Next(-20, 21);
-        int score3 = 100;
 
         public Form1()
         {
@@ -30,9 +28,10 @@ namespace ArrayPractice
 
             label1.Left = rand.Next(ClientSize.Width - label1.Width);
             label1.Top = rand.Next(ClientSize.Height - label1.Height);
-
             label2.Left = rand.Next(ClientSize.Width - label2.Width);
             label2.Top = rand.Next(ClientSize.Height - label2.Height);
+            label3.Left = rand.Next(ClientSize.Width - label3.Width);
+            label3.Top = rand.Next(ClientSize.Height - label3.Height);
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -43,7 +42,7 @@ namespace ArrayPractice
             label1.Left += vx;
             label1.Top += vy;
             label2.Left += vx2;
-            label2.Top += vy2; 
+            label2.Top += vy2;
             label3.Left += vx3;
             label3.Top += vy3;
 
@@ -105,7 +104,7 @@ namespace ArrayPractice
                 && (fpos.Y >= label1.Top)
                 && (fpos.Y < label1.Bottom))
             {
-                timer1.Enabled = false;
+                label1.Visible = false;
             }
 
             if ((fpos.X >= label2.Left)
@@ -113,7 +112,7 @@ namespace ArrayPractice
                 && (fpos.Y >= label2.Top)
                 && (fpos.Y < label2.Bottom))
             {
-                timer1.Enabled = false;
+                label2.Visible = false;
             }
 
             if ((fpos.X >= label3.Left)
@@ -121,7 +120,7 @@ namespace ArrayPractice
                 && (fpos.Y >= label3.Top)
                 && (fpos.Y < label3.Bottom))
             {
-                timer1.Enabled = false;
+                label3.Visible = false;
             }
         }
 
