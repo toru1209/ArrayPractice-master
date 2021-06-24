@@ -107,6 +107,22 @@ namespace ArrayPractice
             {
                 timer1.Enabled = false;
             }
+
+            if ((fpos.X >= label2.Left)
+                && (fpos.X < label2.Right)
+                && (fpos.Y >= label2.Top)
+                && (fpos.Y < label2.Bottom))
+            {
+                timer1.Enabled = false;
+            }
+
+            if ((fpos.X >= label3.Left)
+                && (fpos.X < label3.Right)
+                && (fpos.Y >= label3.Top)
+                && (fpos.Y < label3.Bottom))
+            {
+                timer1.Enabled = false;
+            }
         }
 
 
